@@ -20,17 +20,7 @@ public class GenerateWords {
 	// forms CVC (Consonant / Vowel) word patterns/templates from wordlist
 	// inserts random consonants or vowels into patterns and validates new generated word against bigram model
 	// output: list of possible new words conforming to EN language model
-	
-	// References:
-	// http://norvig.com/mayzner.html
-	// https://www.math.cornell.edu/~mec/2003-2004/cryptography/subs/digraphs.html
-	// https://gist.github.com/lydell/c439049abac2c9226e53
-	
-	// TODO: generate/find bigram model for different languages
-	// TODO: order by most probable pseudo-words according to bigram model
-	// TODO: output sorted by pseudo-word length
-	// TODO: remove duplicate CVC patterns
-	
+		
 	public static void main(String[] args) throws Exception {
 		
 		Bigram bigram = new Bigram(csvFile, delimiter);
